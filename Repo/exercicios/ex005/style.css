@@ -1,0 +1,27 @@
+body{
+    background-color: royalblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    color: white;
+}
+header{
+    text-align: center;
+}
+section{
+    background-color: white;
+    color: black;
+    width: 550px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.289);
+}
+select{
+    width: 225px;
+}
+div{
+    line-break: auto;
+}
+footer{
+    text-align: center;
+}

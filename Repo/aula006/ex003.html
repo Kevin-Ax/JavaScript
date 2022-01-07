@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex001</title>
+</head>
+<body style="background-color: aquamarine; color: black;">
+    <h1>Olá Mundo</h1>
+    <h2>Agora sim</h2>
+    <p>Me livrei da maldição</p>
+    <script>
+        //códigos de javaScryp;
+        window.alert('Você vai digitar 2 números');
+        var num1 =Number(window.prompt('digite o primeiro numero: '));  //convertendo os valores recebidos para números (o comando prompt retorna strings)
+        var num2 =Number(window.prompt('digite o segundo numero: '));
+        /*Number.parseInt(num1);
+        Number.parseInt(num2);*/
+        var soma = num1+num2; //operando os valores
+        var produto = num1*num2;
+        window.alert('A soma dos números é ' + soma + ' e o produto deles é ' + produto + '!');
+        soma.toString();        //convertendo os valores númericos de volta para string
+        produto.toString();
+        window.alert(`A concatenação dos seus resultados é ${soma}${produto} !`);
+    </script>
+</body>
+</html>

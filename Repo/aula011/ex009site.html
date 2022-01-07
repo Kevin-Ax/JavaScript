@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio JS 1</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: black;
+        }
+        div#resultado{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio 1</h1>
+    <h2>Teste de identificação de gringos</h2>
+    Digite aqui seu pais:
+    <input type="text" name="txtnation" id="nat">
+    <input type="button" value="verificar" onclick="verificar()">;
+    <div id="resultado"></div>
+    <script>
+        function verificar(){
+            var nation = document.querySelector("input#nat");
+            //precis SIM converter....
+            var nat = String(nation.value);
+            var result = document.querySelector('div#resultado');
+            if(nat=="Brasil" || nat=="brasil"){
+                result.innerHTML = 'Ta em casa meu padrinho, TMJ!!';
+            }else{
+                result.innerHTML = 'Água coca latãoo, Água coca latãoo, pra gringo é mais caro, MARYYY MARYYY PSIIIIU!!'
+            }
+        }
+    </script>
+</body>
+</html>

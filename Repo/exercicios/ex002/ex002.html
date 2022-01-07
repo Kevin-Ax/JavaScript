@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang=pt_BRn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio -= verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div id="msg">Insira data de nascimento: <input type="number" name="ano" id="ano" min="0">></div> 
+        <div id="gen">
+            Com qual gênero se identifica:
+            <input type="radio" name="radsex" id="mas" checked> <label for="mas">Masculino</label>
+            <input type="radio" name="radsex" id="fem"> <label for="fem">Feminino</label>
+        </div>
+        <input type="button" value="Verificar" id="botao" onclick="verificar()">
+        <div id="result">Preencha os campos solicitados para ver o resultado!</div>
+    </section>
+    <footer>
+        <p>&copy;KevinAlexandre</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

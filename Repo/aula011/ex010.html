@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de velocidade</title>
+    <style>
+        h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h2{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        div#resultado{
+            margin-top: 10px;
+            font-size: 10pt;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Teste de velocidade na estrada!</h1>
+    <h2 id="Subtit">Digite a velocidade de seu veículo: </h2>
+    <input type="number" name="entrada" id='entrada'>
+    <input type="button" value="Verificar" onclick="verificaçao()">
+    <div id="resultado"></div>
+    <script>
+        var ent = window.document.getElementById('entrada');
+        var res = window.document.querySelector('div#resultado');
+        function verificaçao(){
+            var velocidade = Number(ent.value);
+            if(velocidade > 80){
+                res.innerHTML = `Você está acima do limite de velocidade, MULTADO!!`;
+            }else{
+                res.innerHTML = `Você está dentro do limite de velocidade, sua velocidade atual é de ${velocidade}, boa viajem!`;           }
+        }
+    </script>
+</body>
+</html>

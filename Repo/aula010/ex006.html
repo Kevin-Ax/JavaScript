@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#evento{
+            background-color: black;
+            color: aliceblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 15pt;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="evento">testando evento</div>
+    <script>
+        var area = window.document.getElementById('evento');
+        area.addEventListener("click", clickar)
+        area.addEventListener("mouseenter", entrar)
+        area.addEventListener("mouseout", saiu)
+        function clickar(){
+            area.innerText = 'clicou';
+            area.style.color='red';
+        }
+        function entrar(){
+            area.innerText = 'entrou';
+            area.style.background ='white';
+            area.style.color = 'black';
+        }
+        function saiu(){
+            area.innerText = 'saiu';
+            area.style.background ='black';
+            area.style.color = 'white';
+        }
+    </script>
+</body>
+</html>
